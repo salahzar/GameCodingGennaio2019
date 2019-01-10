@@ -5,9 +5,10 @@
 [node name="Victory" index="0" instance=ExtResource( 1 )]
 
 [node name="Label" parent="CenterContainer" index="0"]
-
 margin_left = 539.0
 margin_right = 1380.0
 text = "You Win!"
 
+[node name="Label" parent="TextureButton" index="0"]
+text = "Try Again If you like"
 
