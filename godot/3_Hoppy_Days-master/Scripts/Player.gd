@@ -25,7 +25,7 @@ func _process(delta):
 
 
 func update_animation(motion):
-	$AnimatedSprite.update(motion)
+	$AnimatedSprite.update_player(motion)
 
 
 func fall(delta):
