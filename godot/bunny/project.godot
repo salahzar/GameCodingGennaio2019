@@ -18,6 +18,11 @@ _global_script_class_icons={
 config/name="Bunny"
 config/icon="res://icon.png"
 
+[layer_names]
+
+2d_physics/layer_1="Giocatore"
+2d_physics/layer_2="Terreno"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

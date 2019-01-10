@@ -1,0 +1,126 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://platform/ground_cake.png" type="Texture" id=1]
+[ext_resource path="res://platform/ground_sand.png" type="Texture" id=2]
+[ext_resource path="res://platform/ground_grass.png" type="Texture" id=3]
+[ext_resource path="res://platform/ground_snow.png" type="Texture" id=4]
+[ext_resource path="res://platform/ground_cake_small.png" type="Texture" id=5]
+[ext_resource path="res://platform/ground_sand_small.png" type="Texture" id=6]
+[ext_resource path="res://platform/ground_grass_small.png" type="Texture" id=7]
+[ext_resource path="res://platform/ground_snow_small.png" type="Texture" id=8]
+
+[node name="piattaforme" type="Node2D"]
+position = Vector2( 0, 10 )
+
+[node name="Terra_Torta" type="Sprite" parent="."]
+position = Vector2( 312, 167 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Terra_Torta"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terra_Torta/StaticBody2D"]
+polygon = PoolVector2Array( -192, -37, -172, -47, 178, -47, 188, -37, 188, -17, 158, 33, -162, 43, -192, -17 )
+
+[node name="sabbia" type="Sprite" parent="."]
+position = Vector2( 312, 397 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="sabbia"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sabbia/StaticBody2D"]
+polygon = PoolVector2Array( -192, -37, -172, -47, 178, -47, 188, -37, 188, -17, 158, 33, -162, 43, -192, -17 )
+
+[node name="Terra_Erba" type="Sprite" parent="."]
+position = Vector2( 310, 287 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Terra_Erba"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terra_Erba/StaticBody2D"]
+polygon = PoolVector2Array( -192, -37, -172, -47, 178, -47, 188, -37, 188, -17, 158, 33, -162, 43, -192, -17 )
+
+[node name="neve" type="Sprite" parent="."]
+position = Vector2( 310, 517 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="neve"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="neve/StaticBody2D"]
+polygon = PoolVector2Array( -192, -37, -172, -47, 178, -47, 188, -37, 188, -17, 158, 33, -162, 43, -192, -17 )
+
+[node name="Terra_Torta piccola" type="Sprite" parent="."]
+position = Vector2( 780, 160 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Terra_Torta piccola"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terra_Torta piccola/StaticBody2D"]
+position = Vector2( 1.05265, 0 )
+scale = Vector2( 0.526316, 1 )
+polygon = PoolVector2Array( -192, -37, -172, -47, 178, -47, 188, -37, 188, -17, 136.182, 50, -162, 43, -192, -17 )
+
+[node name="sabbia piccola" type="Sprite" parent="."]
+position = Vector2( 780, 390 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="sabbia piccola"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sabbia piccola/StaticBody2D"]
+position = Vector2( 1.05265, 0 )
+scale = Vector2( 0.526316, 1 )
+polygon = PoolVector2Array( -192, -37, -172, -47, 178, -47, 188, -37, 188, -17, 136.182, 50, -162, 43, -192, -17 )
+
+[node name="Terra_Erba piccola" type="Sprite" parent="."]
+position = Vector2( 778, 280 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Terra_Erba piccola"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terra_Erba piccola/StaticBody2D"]
+position = Vector2( 1.05265, 0 )
+scale = Vector2( 0.526316, 1 )
+polygon = PoolVector2Array( -192, -37, -172, -47, 178, -47, 188, -37, 188, -17, 136.182, 50, -162, 43, -192, -17 )
+
+[node name="nevepiccola" type="Sprite" parent="."]
+position = Vector2( 778, 510 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="nevepiccola"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="nevepiccola/StaticBody2D"]
+position = Vector2( 1.05265, 0 )
+scale = Vector2( 0.526316, 1 )
+polygon = PoolVector2Array( -192, -37, -172, -47, 178, -47, 188, -37, 188, -17, 136.182, 50, -162, 43, -192, -17 )
+
